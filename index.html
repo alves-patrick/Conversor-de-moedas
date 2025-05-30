@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Conversor</title>
 </head>
 
@@ -61,7 +62,22 @@
 
             </div>
 
+            <button type="submit" class="converter-btn" id="convertBtn">
+                💰 Converter Moeda
+            </button>
+
         </form>
+        <div class="loading">
+            <div class="spinner">
+                <p>Buscando Cotação...</p>
+            </div>
+            <div class="result"></div>
+            <div class="error"></div>
+            
+            <div clas="info">
+                <p>💡 Taxas atualizadas em tempo real</p>
+            </div>
+        </div>
 
     </div>
 
