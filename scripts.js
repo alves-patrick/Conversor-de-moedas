@@ -4,7 +4,7 @@ const fromtCurrency = document.getElementById("fromCurrency");
 const convertedAmount = document.getElementById("convertedAmount");
 const toCurrency = document.getElementById("toCurrency");
 const loading = document.querySelector(".loading");
-const result= document.querySelector(".result");
+const result = document.querySelector(".result");
 const error = document.querySelector(".error");
 
 const API_URL = "https://api.exchangerate-api.com/v4/latest/"
@@ -12,12 +12,12 @@ const API_URL = "https://api.exchangerate-api.com/v4/latest/"
 // Function to convert money based on user input        
 
 
-async function convertMoney(){
+async function convertMoney() {
 
     loading.style.display = "block"
     error.style.display = "none"
     result.style.display = "none"
-   
+
     try {
 
         const response = await fetch(API_URL + fromtCurrency.value)
@@ -38,11 +38,11 @@ async function convertMoney(){
         </div>
          `
     }
-    catch (err){
+    catch (err) {
         error.style.display = "block";
         error.innerHTML = `Erro ao converter moeda! Tente novamente.`
     }
-     loading.style.display = "none";
+    loading.style.display = "none";
 
 }
 

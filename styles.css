@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -12,6 +13,7 @@ body {
     align-items: center;
     padding: 20px;
 }
+
 .container {
     background: #fff;
     padding: 40px;
@@ -48,7 +50,8 @@ h1 {
     flex: 1;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 15px;
     border: 2px solid #e0e0e0;
@@ -59,7 +62,7 @@ input, select {
 
 }
 
-input:focus, 
+input:focus,
 select:focus {
     outline: none;
     border-color: #667eea;
@@ -67,6 +70,7 @@ select:focus {
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
     transform: translateY(-2px);
 }
+
 label {
     display: block;
     margin-bottom: 8px;
@@ -75,8 +79,9 @@ label {
     text-align: left;
 
 }
+
 .converter-btn {
-    background:  linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #667eea, #764ba2);
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -88,39 +93,47 @@ label {
     transition: all 0.3s ease;
 
 }
+
 .converter-btn:hover {
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
     transform: translateY(-2px);
 }
 
 .loading {
     margin: 20px;
     display: none;
-    
+
 
 }
 
 .spinner {
-    border: 3px solid #f3f3f3; /* Light grey */
-    border-top: 3px solid #667eea; /* Blue */
+    border: 3px solid #f3f3f3;
+    /* Light grey */
+    border-top: 3px solid #667eea;
+    /* Blue */
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    margin: 0 auto; 
+    margin: 0 auto;
     animation: spin 0.5s linear infinite;
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-    
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
 
 .info {
     margin-top: 30px;
     font-size: 12px;
 }
+
 .result {
     background: linear-gradient(45deg, #f093fb, #f5576c 100%);
     padding: 20px;
